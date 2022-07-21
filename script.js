@@ -3,6 +3,7 @@ window.onload = function()
     var menu = document.getElementById('menu');
     var leftmenu = document.getElementById('leftmenu');
     var iframe = document.getElementById('iframe');
+    var exit = document.getElementById('exit');
     var iw = iframe.clientWidth;
     console.log(iw);
     iframe.style.width = iw - 60 + 'px';
@@ -24,5 +25,9 @@ window.onload = function()
         {
             menu.style.display = 'none';
         }
+    }
+    exit.onclick = function(){
+        menu.style.display = 'none';
+        console.log('close menu')
     }
 }
