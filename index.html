@@ -8,11 +8,12 @@
         <script src="script.js"></script>
         <link href="page.css" rel="stylesheet" />
     </head>
-    <body>
+    <body scroll="no">
         <style>
             body{
                 margin: 0;
                 padding: 0;
+                overflow-y:hidden
             }
             .topdiv
             {
@@ -32,7 +33,7 @@
             }
             .leftmenu
             {
-                width: 70px;
+                width: 60px;
                 position: absolute;
                 top: 0;
                 bottom: 0;
@@ -55,7 +56,7 @@
                     <input class="search" placeholder="Search" />
                     <div style="width: 100%;height: 40px;"></div>
                     <button class="btn" onclick="window.location.href=''">首页 Main</button>
-                    <button class="btn">下载 Downloads</button>
+                    <button class="btn" onclick="window.location.href='downloads.html'">下载 Downloads</button>
                     <button class="btn" onclick="window.location.href='document'">文档 Document</button>
                     <button class="btn">帮助Help</button>
                     <button class="btn">开发 Develop</button>
